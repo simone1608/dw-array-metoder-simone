@@ -18,34 +18,39 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(catsArray);
     //Jeg bruger push tager det nye element og tilføjer det til slutningen af arrayet og sender det nye array tilbage med den nye element.
 
-    //Opgave 3 a
+    // Opgave 3 a
     let hasTrixie = dogsArray.includes("Trixie");
     console.log(hasTrixie);
 
-    //Opgave 3 b
+    // Opgave 3 b
     let hasBaxter = dogsArray.includes("Baxter");
     console.log(hasBaxter);
     //Jeg bruger includes da det tjekker arrayet for om der er et specifikt element og derefter udskriver true eller false derudfra
 
-    //Opgave 4 a
+    // Opgave 4 a
     let cat = catsArray.find(function (cat) {
         return cat === "Bagheera";
     });
     console.log(cat);
 
-    //Opgave 4 b
+    // Opgave 4 b
     let cats = catsArray.find(function (cats) {
         return cats === "Salem";
     });
     console.log(cats);
     //Jeg brugte find da den ville gå igennenm alle elementerne og se om der var nogle der peaasede og sende dem ud hvis ikke sende ud undefined
 
-    //Opgave 5
+    // Opgave 5
     let plusNumbers = numbersArray.map(function (number) {
         return number * 3;
     });
     console.log(plusNumbers);
     //Jeg brugte map da det laver et nyt array med resultatet med den function der er kaldt
 
-    //Opgave 6
+    // Opgave 6
+    let dogs = dogsArray.join("");
+    console.log(dogs);
+    //Jeg brugte join da det tager alle elementerne og ligger dem ved siden af hinnaden og kan sætte dem op med hvad du gerne ville have som f.eks. med mellemrum eller komaer
+
+    // Opgave 7 a
 }) // ends DOMContentLoaded
