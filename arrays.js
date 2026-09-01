@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let newNumbers = numbersArray.filter(function (number) {
         return number > 20;
     });
-
     console.log(newNumbers);
     //Jeg bruger filter da den kalder alle elementerne tilbage og tjekker for vilke er sande og sender kun de sande ud igen. 
 
@@ -19,12 +18,27 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(catsArray);
     //Jeg bruger push tager det nye element og tilføjer det til slutningen af arrayet og sender det nye array tilbage med den nye element.
 
-    //opgave 3 a
+    //Opgave 3 a
     let hasTrixie = dogsArray.includes("Trixie");
     console.log(hasTrixie);
 
-    //opgave 3 b
+    //Opgave 3 b
     let hasBaxter = dogsArray.includes("Baxter");
     console.log(hasBaxter);
     //Jeg bruger includes da det tjekker arrayet for om der er et specifikt element og derefter udskriver true eller false derudfra
+
+    //Opgave 4 a
+    let cat = catsArray.find(function (cat) {
+        return cat === "Bagheera";
+    });
+    console.log(cat);
+
+    //Opgave 4 b
+    let cats = catsArray.find(function (cats) {
+        return cats === "Salem";
+    });
+    console.log(cats);
+    //Jeg brugte find da den ville gå igennenm alle elementerne og se om der var nogle der peaasede og sende dem ud hvis ikke sende ud undefined
+
+    //Opgave 5
 }) // ends DOMContentLoaded
