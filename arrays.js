@@ -62,4 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //Jeg brugte indexOf da det finder det første element der passer og fortæller enten hvor det ligger eller -1 for hvis det ikke er der
 
     // Opgave 8
+    dogsArray.indexOf("Polly")
+    dogsArray.splice(3, 1);
+    console.log("Opgave 8", dogsArray);
+    //Jeg brugte splice da det kan fjerne eller ændre et element
+
 }) // ends DOMContentLoaded
