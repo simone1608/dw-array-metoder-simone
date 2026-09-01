@@ -41,4 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
     //Jeg brugte find da den ville gå igennenm alle elementerne og se om der var nogle der peaasede og sende dem ud hvis ikke sende ud undefined
 
     //Opgave 5
+    let plusNumbers = numbersArray.map(function (number) {
+        return number * 3;
+    });
+    console.log(plusNumbers);
+    //Jeg brugte map da det laver et nyt array med resultatet med den function der er kaldt
+
+    //Opgave 6
 }) // ends DOMContentLoaded
